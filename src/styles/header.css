@@ -1,0 +1,47 @@
+/* Container styles */
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Brand/logo styling */
+  .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  /* Toggle navigation container */
+  .toggle-nav {
+    display: flex;
+    background: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  /* Toggle button styles */
+  .toggle-button {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #2d3436;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  /* Active toggle style */
+  .toggle-button.active {
+    background: #2563eb;
+    color: #fff;
+  }
+  
+  /* Hover effect for inactive buttons */
+  .toggle-button:not(.active):hover {
+    background: #dfe6e9;
+  }
+  
+  /* Dark mode adjustments (if needed) */
+  .dark-mode .toggle-button:not(.active):hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
